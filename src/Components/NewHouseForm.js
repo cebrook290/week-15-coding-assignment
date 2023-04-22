@@ -15,16 +15,18 @@ export default function NewHouseForm(props) {
     };
 
   return (
+    <>
     <div>
       <form onSubmit={onSubmit}> 
       <input 
+        className='form-control' 
         type='text'  
         placeholder='Enter New House'
         onChange={(e) => setName (e.target.value)}
         value={name}>
-        </input>
-      <button type='submit'>Create</button>
+        </input><br/>  
+      <button className='btn btn-secondary form-control' type='submit'>Create</button> 
     </form>
-    </div>
+    </div><br/> </>
   )
 }

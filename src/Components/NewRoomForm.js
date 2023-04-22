@@ -22,20 +22,30 @@ export const NewRoomForm = (props) => {
 
   return (
     <div>
-      <h4>Add a new room</h4>
-      <form onSubmit={onSubmit}>
-        <input
-            type='text'
-            placeholder='name'
-            onChange={(e) => setName(e.target.value)}
-            value={name}/>
-        <input
-            type='text'
-            placeholder='area'
-            onChange={handleAreaInput}
-            value={area}/>
-        <button type='submit'>Add Room</button>
-      </form>
+      <h5>Add a new room</h5>
+      <form onSubmit={onSubmit}> 
+      <div className='row'>
+        <div className='col-sm'>
+          <input
+              className='form-control'
+              type='text'
+              placeholder='Room Name'
+              onChange={(e) => setName(e.target.value)}
+              value={name}/>
+        </div>
+        <div className='col-sm'>
+          <input
+              className='form-control'
+              type='text'
+              placeholder='Area'
+              onChange={handleAreaInput}
+              value={area}/>
+        </div>
+       </div><br/>
+       <button className='btn btn-outline-secondary btn-sm' type='submit'>Add Room</button>
+      </form><br/>
+      
+      
     </div>
   )
 }

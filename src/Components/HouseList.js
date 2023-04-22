@@ -43,7 +43,7 @@ export default class HouseList extends React.Component {
                             updateHouse={this.updateHouse}
                              />
                     ))}
-                </div>
+                </div><br/>
             </div>
             </>
         )   
